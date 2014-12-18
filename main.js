@@ -15,7 +15,7 @@ var score = 0;
   checkblank("班级");
   checkblank("学号");
   checkblank("姓名");
-  
+
   var goal = document.getElementById("score");
   goal.value = score;
   return false;

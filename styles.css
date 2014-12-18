@@ -1,0 +1,9 @@
+h1{
+  background:grey;
+}
+input{
+  border-style: none;
+  }
+#score{
+  text-decoration:underline;
+}
