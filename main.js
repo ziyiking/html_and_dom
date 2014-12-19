@@ -17,11 +17,12 @@ var score = 0;
   score += ChoiceAnswer1.getscore();
   var ChoiceAnswer2 = new ChoiceAnswer("choice4","ABC");
   score += ChoiceAnswer2.getscore();
-  var ChoiceAnswer3 = new ChoiceAnswer("judge","NO");
+  var ChoiceAnswer3 = new ChoiceAnswer("judge1","NO");
   score += ChoiceAnswer3.getscore();
-  var ChoiceAnswer4 = new ChoiceAnswer("judge","YES");
+  var ChoiceAnswer4 = new ChoiceAnswer("judge2","YES");
   score += ChoiceAnswer4.getscore();
-  // score += fillIn1.getscore("answer","模型是对现实世界的简化和抽象,模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体;可以是某种图形;或者是一种数学表达式。");
+  var fillIn7 = new Fillin("answer","模型是对现实世界的简化和抽象,模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体;可以是某种图形;或者是一种数学表达式。");
+  score += fillIn7.getscore();
   //
 
 
