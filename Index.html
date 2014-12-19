@@ -2,24 +2,25 @@
 <html>
   <head lang="zh-CN">
     <meta charset="UTF-8">
-  <script src="js/Question.js" type="text/javascript"></script>
+  <script src="js/model/Question.js" type="text/javascript"></script>
   <script src="js/main.js" type="text/javascript"></script>
-  <script src="js/fillIn.js" type="text/javascript"></script>
-  <script src="js/ChoiceAnswer.js" type="text/javascript"></script>
+  <script src="js/model/fillIn.js" type="text/javascript"></script>
+  <script src="js/model/ChoiceAnswer.js" type="text/javascript"></script>
   <title>测试题</title>
-  <link rel="stylesheet"  type="text/css"  href="css/styles.css"/>
+  <!-- <link rel="stylesheet"  type="text/css"  href="css/styles.css"/> -->
+  <link rel="stylesheet"  type="text/css"  href="lib/bootstrap-3.2.0-dist/css/bootstrap.min.css"/>
 
 </head>
 <body >
   <p><h5>建模测试<hr></h5></p>
   <p><h1><center>统一建模语言理论测试</center></h1></p>
-  <p>
+  <p  class="lead">
     考试科目：
     <b><u>统一建模语言</b></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     时间：<u>100分钟 </u> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </p>
 
-    <form>
+    <form autocomplete="off">
       得分：
       <input type="text"  id="score" size="10" />
       班级:
@@ -122,7 +123,7 @@
     <textarea name="answer" id="answer" rows="10" cols="50"></textarea>
     <br>
 
-    <button type="submit" onclick="return checkform()">提交答案</button>
+    <button type="submit" class="btn btn-success" onclick="return checkform()">提交答案</button>
   </div>
     </form>
     </body>
