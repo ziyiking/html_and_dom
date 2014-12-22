@@ -28,13 +28,12 @@ var score = 0;
   checkblank("学号");
   checkblank("姓名");
 
-  var goal = document.getElementById("score");
-  goal.value = score;
+  $('#score').val(score);
   return false;
   }
 
 function checkblank(id) {
-  if(document.getElementById(id).value === '') {
+  if($('#'+id).val() === ''){
     alert(id+"不能为空");
   }
 
